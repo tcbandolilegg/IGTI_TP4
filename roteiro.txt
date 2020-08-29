@@ -21,10 +21,18 @@ alguns endpoints para manipulação dos dados.
 
 Atividades
 
-(  ) O aluno deverá baixar o arquivo com os dados para a 
+( x ) Criar  o diretório
+
+( x ) Criar o index.json
+
+( x ) rodar npm init -y
+
+( x ) Abrir package.json e colocar "type": "module"
+
+( x ) O aluno deverá baixar o arquivo com os dados para a 
 carga inicial na base de dados e desempenhar as seguintes atividades:
 
-(  ) 1. Criar um banco de dados no MongoDB Atlas, 
+( x ) 1. Criar um banco de dados no MongoDB Atlas, 
 uma coleção e importar os dados arquivo “accounts.json” em sua coleção.
 
 (  ) 2. Implementar um modelo (schema) para esta coleção, 
