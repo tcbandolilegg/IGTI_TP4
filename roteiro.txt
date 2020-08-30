@@ -29,13 +29,20 @@ Atividades
 
 ( x ) Abrir package.json e colocar "type": "module"
 
+( x )  intalar as dependencias:  
+      npm install mongoose 
+      npm install express 
+      ou  npm install mongoose express (instalando os 2 ao mesmo tempo)
+
+( x ) criar as estruturas (folders) models e routers
+
 ( x ) O aluno deverá baixar o arquivo com os dados para a 
 carga inicial na base de dados e desempenhar as seguintes atividades:
 
 ( x ) 1. Criar um banco de dados no MongoDB Atlas, 
 uma coleção e importar os dados arquivo “accounts.json” em sua coleção.
 
-(  ) 2. Implementar um modelo (schema) para esta coleção, 
+( x ) 2. Implementar um modelo (schema) para esta coleção, 
 considerando que todos os campos são requeridos 
 e o campo balance não pode ser menor que 0.
 

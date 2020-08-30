@@ -21,9 +21,11 @@ const accountSchema = mongoose.Schema({
     type: Number,
     required: true,
     //Valida se a nota inserida e' menor que zero
-    validate(balance) {
-      if (balance < 0) throw new Error('Valor negativo para balance');
-    },
+    // ou faz o if ou cloca o min
+    // validate(balance) {
+    //   if (balance < 0) throw new Error('Valor negativo para balance');
+    // },
+    min: 0,
   },
   // lastModified: {
   //   type: Date,
@@ -32,6 +34,6 @@ const accountSchema = mongoose.Schema({
 
 });
 
-const accountModel = mongoose.model('account', studentSchema, 'account');
+const accountModel = mongoose.model('accounts', accountSchema, 'accounts');
 
 export { accountModel };
