@@ -12,25 +12,32 @@ app.use(accountRouter);
 
 app.listen(3001, () => console.log('Servidor em execucao'));
 
-// /*Conexao com o MongoDB*/
-// (async () => {
-//   try {
-//     await mongoose.connect(
-//       'mongodb+srv://' +
-//       process.env.USERDB +
-//       ':' +
-//       process.env.PWDDB +
-//       '@bootcamp-smurc.mongodb.net/grades?retryWrites=true&w=majority',
-//       {
-//         useNewUrlParser: true,
-//         useUnifiedTopology: true,
-//       }
-//     );
-//     console.log('Conectado no MongoDB');
-//   } catch (error) {
-//     console.log('Erro ao conectar no MongoDB');
-//   }
-// })();
+/*Conexao com o MongoDB*/
+(async () => {
+  try {
+    await mongoose.connect(
+      // 'mongodb+srv://' +
+      // process.env.USERDB +
+      // ':' +
+      // process.env.PWDDB +
+      // '@bootcamp-smurc.mongodb.net/grades?retryWrites=true&w=majority',
+      "mongodb+srv://tcbandolilegg:0Mongodb*@cluster0.6dkfe.gcp.mongodb.net/igti?retryWrites=true&w=majority",
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      }
+    );
+    console.log('Conectado no MongoDB com sucesso');
+  } catch (error) {
+    console.log('Erro ao conectar no MongoDB ' + error);
+  }
+})();
+
+
+
+
+
+
 
 
 

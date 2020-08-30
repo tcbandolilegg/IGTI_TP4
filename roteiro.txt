@@ -46,7 +46,7 @@ uma coleção e importar os dados arquivo “accounts.json” em sua coleção.
 considerando que todos os campos são requeridos 
 e o campo balance não pode ser menor que 0.
 
-(  ) 3. Criar o projeto my-bank-api para implementação dos endpoints.
+( x ) 3. Criar o projeto my-bank-api para implementação dos endpoints.
 
 
 (  ) 4. Crie um endpoint para registrar um depósito em uma conta. 
